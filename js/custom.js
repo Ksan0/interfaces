@@ -59,6 +59,15 @@ $(".nav-sidebar > li:nth-child(6)").click(function() {
 	
 });
 
+$(".nav-sidebar > li:nth-child(7)").click(function() {
+	$(".page-header").empty().append("Баланс");
+	
+});
+$(".nav-sidebar > li:nth-child(8)").click(function() {
+	$(".page-header").empty().append("Периодические платежи");
+	
+});
+
 $("ul.nav:nth-child(1) > li:nth-child(1) > a:nth-child(1)").click(function() {
 //	redirToMain();
 });
