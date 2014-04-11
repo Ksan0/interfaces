@@ -52,16 +52,18 @@
 	<div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Обзор</a></li>
+            <li class="active"><a href="#">История</a></li>
 			<li><a href="#cards">Ваши карты</a></li>
             <li><a href="#">Пополнение</a></li>
             <li><a href="#pays">Платежи</a></li>
             <li><a href="#trans">Переводы</a></li>
 			<li><a href="#delegate">Делигирование</a></li>
+            <li><a href="#regular">Периодические платежи</a></li>
+
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Обзор</h1>
+          <h1 class="page-header">История</h1>
 		 
 		<!-- Page overview --> 
 		  <div class="hided active">	
@@ -292,7 +294,11 @@
             <option value="3">RUR</option>
           </select>
           </p>
-
+                     <select>
+            <option value="1">Разовый</option>
+            <option value="2">1 неделя</option>
+            <option value="3">1 месяц</option>
+          </select>
           <p><button class="btn btn-success" data-target="#ConfirmPay" data-toggle="modal">Оплатить</button></p>
         </form>
       </div>
@@ -303,7 +309,11 @@
 		<!-- /END Page transactions -->
 		<!-- Page delegate -->
 		  <div class="hided">
+          <h1 class="page-header">Периодические платежи</h1>  
 		  </div>
+
+      <div class="hided">
+      </div>
 		<!-- /END Page delegate -->
         </div>	
 	  </div>
