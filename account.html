@@ -80,7 +80,7 @@
                 <h4>Перевод</h4>
               </div>
             </div-->
-		    <h3 class="sub-header">Ваш баланс: 3433$</h3>
+		    <h3 class="sub-header"></h3>
             <h2 class="sub-header">История платежей</h2>
             <div class="table-responsive">
               <table class="table table-striped">
@@ -255,15 +255,35 @@
 		<!-- /END Page Cards -->
 		<!-- Page purchase -->
 		  <div class="hided">
-        <!--form>
-          <input type="text" placeholder="Card #">
-
-        </form-->
+        
 		  </div>
 		<!-- /END Page purchase -->	
 		<!-- Page pays -->
 		  <div class="hided">
-		  </div>
+		    <form>
+          <p>
+          <select>
+            <option value="1">MasterCard #00000000000000</option>
+            <option value="2">Visa #111111111111</option>
+            <option value="3">SmthElse #342352352</option>
+          </select>
+          Осталось: 200 USD
+          </p>
+
+          <p><input type="text" placeholder="Счет #"></p>
+          
+          <p>
+          <input type="text" placeholder="Сумма">
+          <select>
+            <option value="1">USD</option>
+            <option value="2">EUR</option>
+            <option value="3">RUR</option>
+          </select>
+          </p>
+
+          <p><input type="submit" value="Оплатить"></p>
+        </form>
+      </div>
 		<!-- /END Page pays -->
 		<!-- Page transactions -->
 		  <div class="hided">
@@ -295,7 +315,7 @@
           </div>
           <div class="modal-footer">
         	<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-        	<button type="button" class="btn btn-primary" data-dismiss="modal">Оплатить</button>
+        	<button type="button" class="btn btn-primary" data-dismiss="modal">Добавить</button>
      	  </div>
       	</div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
