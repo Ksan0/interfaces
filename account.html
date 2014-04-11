@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Ruslan Galimov">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+	
+    <!-- Custom styles for this template -->
+    <link href="dist/css/dashboard.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Queen's Pay</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#">Главная</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+		  <p class="navbar-text navbar-right" style="color:#fff">Mark Otto (Balance: 3433$)</p>	
+        </div>
+      </div>
+	</div>
+	<div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Обзор</a></li>
+			<li><a href="#cards">Ваши карты</a></li>
+            <li><a href="#">Пополнение</a></li>
+            <li><a href="#pays">Платежи</a></li>
+            <li><a href="#trans">Переводы</a></li>
+			<li><a href="#delegate">Делигирование (Premiun Only)</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Обзор</h1>
+		 
+		<!-- Page overview --> 
+		  <div class="hided active">	
+            <!--div class="row placeholders">                                                                    
+              <div class="col-xs-6 col-sm-3 placeholder">
+                <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+                <h4>Карты</h4>
+                <!--span class="text-muted">Something else</span>
+              </div>
+              <div class="col-xs-6 col-sm-3 placeholder">
+                <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+                <h4>Пополнение</h4>
+              </div>
+              <div class="col-xs-6 col-sm-3 placeholder">
+                <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+                <h4>Периодический платеж</h4>
+              </div>
+              <div class="col-xs-6 col-sm-3 placeholder">
+                <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+                <h4>Перевод</h4>
+              </div>
+            </div-->
+		    <h3 class="sub-header">Ваш баланс: 3433$</h3>
+            <h2 class="sub-header">История платежей</h2>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>№</th>
+                    <th>тип</th>
+                    <th>от кого</th>
+                    <th>кому</th>
+                    <th>сумма</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1,001</td>
+                    <td>lorem</td>
+                    <td>ipsum</td>
+                    <td>dolor</td>
+                    <td>$100</td>
+                  </tr>
+                  <tr>
+                    <td>1,002</td>
+                    <td>amet</td>
+                    <td>consectetur</td>
+                    <td>elit</td>
+                    <td>$254</td>
+                  </tr>
+                  <tr>
+                    <td>1,003</td>
+                    <td>integer</td>
+                    <td>nec</td>
+                    <td>odio</td>
+                    <td>$254</td>
+                  </tr>
+                  <tr>
+                    <td>1,003</td>
+                    <td>libero</td>
+                    <td>sed</td>
+                    <td>cursus</td>
+                    <td>$254</td>
+                  </tr>
+                  <tr>
+                    <td>1,004</td>
+                    <td>dapibus</td>
+                    <td>diam</td>
+                    <td>sed</td>
+                    <td>$254</td>
+                  </tr>
+                  <tr>
+                    <td>1,005</td>
+                    <td>nulla</td>
+                    <td>quis</td>
+                    <td>sem</td>
+                    <td>$254</td>
+                  </tr>
+                  <tr>
+                    <td>1,006</td>
+                    <td>nibh</td>
+                    <td>elementum</td>
+                    <td>imperdiet</td>
+                    <td>$254</td>
+                  </tr>
+                  <tr>
+                    <td>1,007</td>
+                    <td>sagittis</td>
+                    <td>ipsum</td>
+                    <td>praesent</td>
+                    <td>$254</td>
+                  </tr>
+                  <tr>
+                    <td>1,008</td>
+                    <td>fusce</td>
+                    <td>nec</td>
+                    <td>tellus</td>
+                    <td>$300</td>
+                  </tr>
+                  <tr>
+                    <td>1,009</td>
+                    <td>augue</td>
+                    <td>semper</td>
+                    <td>porta</td>
+                    <td>$342</td>
+                  </tr>
+                  <tr>
+                    <td>1,010</td>
+                    <td>massa</td>
+                    <td>vestibulum</td>
+                    <td>lacinia</td>
+                    <td>$253</td>
+                  </tr>
+                  <tr>
+                    <td>1,011</td>
+                    <td>eget</td>
+                    <td>nulla</td>
+                    <td>class</td>
+                    <td>$343</td>
+                  </tr>
+                  <tr>
+                    <td>1,012</td>
+                    <td>taciti</td>
+                    <td>sociosqu</td>
+                    <td>ad</td>
+                    <td>$2223</td>
+                  </tr>
+                  <tr>
+                    <td>1,013</td>
+                    <td>torquent</td>
+                    <td>per</td>
+                    <td>conubia</td>
+                    <td>$22</td>
+                  </tr>
+                  <tr>
+                    <td>1,014</td>
+                    <td>per</td>
+                    <td>inceptos</td>
+                    <td>himenaeos</td>
+                    <td>$2727</td>
+                  </tr>
+                  <tr>
+                    <td>1,015</td>
+                    <td>sodales</td>
+                    <td>ligula</td>
+                    <td>in</td>
+                    <td>$26274</td>
+                  </tr>
+                </tbody>
+              </table>
+		    </div>
+          </div>
+		<!-- /END Page overview-->
+		<!--Page Cards -->
+	      <div class="hided">                                                                                   	
+		    <h2 class="sub-header">Ваши карты</h2>	
+            <div class="table-responsive">
+		  	  <button class="btn btn-success" data-target="#AddCard" data-toggle="modal">Добавить карту</button>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>№</th>
+                    <th>тип</th>
+                    <th>Фамилия Имя</th>
+                    <th>№</th>
+                    <th>CVC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>MasterCard</td>
+                    <td>Vatulin Aleksandr</td>
+                    <td>00000000000000</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Visa</td>
+                    <td>Nekisliy Artem</td>
+                    <td>111111111111</td>
+                    <td>254</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>SmthElse</td>
+                    <td>Pishen Nikolay</td>
+                    <td>342352352</td>
+                    <td>6234</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+		  </div>
+		<!-- /END Page Cards -->
+		<!-- Page purchase -->
+		  <div class="hided">
+        <!--form>
+          <input type="text" placeholder="Card #">
+
+        </form-->
+		  </div>
+		<!-- /END Page purchase -->	
+		<!-- Page pays -->
+		  <div class="hided">
+		  </div>
+		<!-- /END Page pays -->
+		<!-- Page transactions -->
+		  <div class="hided">
+		  </div>
+		<!-- /END Page transactions -->
+		<!-- Page delegate -->
+		  <div class="hided">
+		  </div>
+		<!-- /END Page delegate -->
+        </div>	
+	  </div>
+    </div>	
+      <hr class="featurette-divider">
+      <!-- FOOTER -->
+      <footer>
+      </footer>
+	<div class="modal fade" id="AddCard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+    	<div class="modal-content">
+    	  <div class="modal-header">
+    		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    		<h4 class="modal-title">Пожалуйста введите данные</h4>
+    	  </div>
+    	  <div class="modal-body">
+      		<input type="text" class="form-control" placeholder="Type" autofocus>
+      		<input type="text" class="form-control" placeholder="First and Last name">
+      		<input type="text" class="form-control" placeholder="Card number">
+      		<input type="text" class="form-control" placeholder="CVC">
+          </div>
+          <div class="modal-footer">
+        	<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        	<button type="button" class="btn btn-primary" data-dismiss="modal">Оплатить</button>
+     	  </div>
+      	</div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/holder.js"></script>
+	<script src="js/custom.js"></script>
+  </body>
+</html>
